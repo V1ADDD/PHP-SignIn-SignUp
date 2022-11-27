@@ -1,3 +1,4 @@
+//exit from profile, finishing session
 $("form").submit(function(e){
     e.preventDefault();
     $.ajax({
@@ -9,6 +10,7 @@ $("form").submit(function(e){
     })
 })
 
+//if session is opened show "Hello, {User}" text, else redirecting to sign in
 function start_session(){
     $.ajax({
         type: 'Post',

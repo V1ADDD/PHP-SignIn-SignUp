@@ -1,3 +1,4 @@
+//check if user is authentificated, if yes, showing account page
 function start_session(){
     $.ajax({
         type: 'Post',

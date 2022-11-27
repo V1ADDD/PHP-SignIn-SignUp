@@ -1,11 +1,11 @@
 <?php
 include_once "./account_class.php";
 $db = new Database();
-if($db->find_value($_POST['login'],"login"))
+if($db->find_value($_POST['login'],"login")) //check if login already exists in database
     echo json_encode(array('result' => "1"));
 else
 {
-    if($db->find_value($_POST['email'],"email"))
+    if($db->find_value($_POST['email'],"email")) //check if email already exists in database
         echo json_encode(array('result' => "2"));
     else
     {
